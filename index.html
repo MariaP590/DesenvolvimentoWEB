@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Meu trabalho de html</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+
+  <div style="display: flex; justify-content: center;">
+  <img src="https://i.ibb.co/HD1Rj1wm/Whats-App-Image-2026-03-24-at-00-22-39.jpg" alt="Whats-App-Image-2026-03-24-at-00-22-39" width="450" height="auto" border="0"></a>
+  </div>
+
+  <nav class="navbar">
+    <ul class="menu-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#receitas">Receitas</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<br>
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+ }
+
+ style
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  top: 20px;  
+  right: 0%;  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://image2url.com/r2/default/files/1774501342105-0a2e3bb3-dfc9-4d7e-ac3b-9f4ac1e45650.webp" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://image2url.com/r2/default/files/1774501376106-f73aadac-9aac-4e9d-a56d-c2f81a928a6e.jpg" style="width:100%";>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://image2url.com/r2/default/files/1774501401960-d9534f56-a567-436c-b5c7-c59bd5c7f4b2.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br>
+
+<p class="paragrafo-estilizado1" style="color:rgb(172, 43, 43)">Bem-vindo(a)!</p>
+
+<br>
+
+<p class="paragrafo-estilizado2">Esse blog tem como propósito compartilhar algumas receitas da culinária oriental que já reproduzi e experiências um tanto desastrosas que passei enquanto aprendia a cozinhá-las, espero que goste!<p>
+
+  <br><br>
+<hr style="color: #593315">
+
+  <p id="receitas"class="paragrafo-estilizado3">Gohan (Arroz japonês)</p>
+
+<div class="container2">
+  <img src="https://i.ibb.co/QjmYnr6r/kome-ph1-scaled.jpg" alt="kome-ph1-scaled" style="width:500px"></div>
+
+   <br>
+
+  <p class="paragrafo-estilizado4">E bom, por onde devo começar, o gohan, conhecido também como o clássico arroz japonês,
+     é aquele arroz branquinho e levemente grudadinho que pela cara não parece tanta coisa,
+      mas é praticamente o coração das refeições no Japão, tipo o arroz com feijão aqui no Brasil.
+       Ele vai bem com tudo e, sozinho, já é uma belezura.</p>
+
+       <p class="paragrafo-estilizado5">Se tem uma coisa que eu não entendo é como eu nunca acerto o ponto do arroz japonês, parece simples demais pra dar errado sabe, mas sempre que tento ou queima no fundo ou vira mingau. O mais irônico é que o arroz brasileiro eu faço sem pensar, além de que vai mais ingredientes nele. É como se eu tivesse uma habilidade específica… que simplesmente não funciona quando eu tento fazer gohan, mas ainda assim me vejo querendo melhorar nesse aspecto, até porque é bem gostoso!
+
+<hr>
+        <div class="container3">
+  <p class="texto-curto"></p>
+  <input type="checkbox" id="check" class="check-box">
+  <p class="texto-longo">Ingredientes:
+<br><br>
+• 1½ xícara (chá) de arroz japonês (grão do tipo longo para culinária oriental);
+<br>
+• 3 xícaras (chá) de água.
+<br><br>
+Modo de preparo:
+<br><br>
+Em uma peneira, lave o arroz sob água corrente até a água sair menos branca, é importante lavar para deixar os grãos mais grudadinhos.
+<br>
+Transfira para uma panela pequena e cubra com a água. 
+<br>
+Leve ao fogo médio e deixe cozinhar por 10 minutos, até começar a ferver. 
+<br>
+Abaixe o fogo e deixe cozinhar por mais 10 minutos com a tampa entreaberta, ou até o arroz absorver toda a água, ele fica levemente úmido e bem grudadinho.
+<br>
+Desligue o fogo, tampe a panela e deixe o arroz terminar de cozinhar no próprio vapor por mais 5 minutos, depois de tudo isso, tá pronto o sorvetinhoo!
+<br><br><br>
+Caso prefira uma versão da receita mais detalhada, recomendo assistir o vídeo abaixo da senhora Kayoko, a forma como ela ensina é muito boa, aproveite e se inscreva no  canal dela também, viu!
+<br><br>
+<iframe width="560" height="315" class="video-tubetube" src="https://www.youtube.com/embed/PtbgstR5AeQ?si=TfMLZBk9dipCYpDW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+  <label for="check" class="btn-leia-mais"></label>
+</div>
+<hr>
+<p class="cagueimole">Sobre Mim</p>
+
+<section id="sobre" style="border: 1px solid black; margin: 20px;">
+        <p class="muitobacana">Meu nome é Maria Paula, tenho 18 anos, sou estudante da faculdade Fatec e curso desenvolvimento de software multiplataforma, procuro entender melhor sobre HTML, CSS e JavaScript como também poder criar projetos de site novos.</p>
+        </section>
+
+        <div class="container">
+  <div style="text-align:center">
+    <h2 id="contato">Me contate</h2>
+    <p>Caso tenha alguma sugestão que queira compartilhar comigo, sinta-se livre para deixar uma mensagem logo abaixo!</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://i.ibb.co/wrr0Tvjf/download.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Nome</label>
+        <input type="text" id="fname" name="firstname" placeholder="Seu nome...">
+        </select>
+        <label for="subject">Assunto</label>
+        <textarea id="subject" name="subject" placeholder="Escreva alguma coisa..." style="height:170px"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+</div>
+      
+</body>
+</html>
